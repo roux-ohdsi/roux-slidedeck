@@ -1,0 +1,47 @@
+---
+title: "allofus: an R package to facilitate use of the All of Us Researcher Workbench <br><br>"
+title-slide-attributes:
+  data-background-image: "roux-title-image.jpg"
+  data-background-size: cover
+  data-background-opacity: "0.5"
+  logo: none
+author:
+  - name: Louisa Smith, PhD
+    affiliation: 
+      - The Roux Institute at Northeastern University
+      - Bouve College of Health Sciences, Northeastern University
+  - name: Rob Cavanaugh, PhD
+    affiliation: 
+      - The Roux Institute at Northeastern University
+format: 
+  revealjs:
+    theme: default
+    logo: "roux-rb.png"  # This will appear on all slides except title
+    css: style.css
+include-after: |
+  <script type="text/javascript">
+    Reveal.on('ready', event => {
+      if (event.indexh === 0) {
+        document.querySelector("div.has-logo > img.slide-logo").style.display = "none";
+      }
+    });
+    Reveal.addEventListener('slidechanged', (event) => {
+      if (event.indexh === 0) {
+        Reveal.configure({ slideNumber: null });
+        document.querySelector("div.has-logo > img.slide-logo").style.display = "none";
+      }
+      if (event.indexh === 1) { 
+        Reveal.configure({ slideNumber: 'c' });
+        document.querySelector("div.has-logo > img.slide-logo").style.display = null;
+      }
+    });
+  </script>
+---
+
+## Regular Slide
+
+Your content here
+
+## Another Slide
+
+More content
