@@ -13,10 +13,11 @@ author:
   - name: Author 2
     affiliation: 
       - The Roux Institute at Northeastern University
-format: 
+format:
   revealjs:
-    theme: default
+    slide-number: "c"
     logo: "roux-rb.png"  # This will appear on all slides except title
+    theme: [simple, custom.scss]
     css: style.css
 include-after: |
   <script type="text/javascript">
@@ -30,7 +31,7 @@ include-after: |
         Reveal.configure({ slideNumber: null });
         document.querySelector("div.has-logo > img.slide-logo").style.display = "none";
       }
-      if (event.indexh === 1) { 
+      if (event.indexh === 1) {
         Reveal.configure({ slideNumber: 'c' });
         document.querySelector("div.has-logo > img.slide-logo").style.display = null;
       }

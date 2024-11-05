@@ -5,9 +5,9 @@
 
 /* Adjust logo size and position */
 .slide-logo {
-    max-height: 250px !important;
+    max-height: 60px !important;
     right: 5px !important;
-    bottom: 5px !important;
+    bottom: 0px !important;
 }
 
 /* Optional: Style your title slide text */
